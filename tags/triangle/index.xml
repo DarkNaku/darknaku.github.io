@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>triangle on 코딩하는 나긔</title>
+    <link>http://darknaku.github.io/tags/triangle/</link>
+    <description>Recent content in triangle on 코딩하는 나긔</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ko</language>
+    <lastBuildDate>Thu, 06 Jan 2022 13:49:43 +0900</lastBuildDate><atom:link href="http://darknaku.github.io/tags/triangle/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>좌표가 삼각형 안쪽에 있는지 판별</title>
+      <link>http://darknaku.github.io/posts/20220106_1/</link>
+      <pubDate>Thu, 06 Jan 2022 13:49:43 +0900</pubDate>
+      
+      <guid>http://darknaku.github.io/posts/20220106_1/</guid>
+      <description>특정 좌표가 삼각형 안이나 밖에 있는지 확인하는 함수    좌표가 삼각형 안쪽에 있는 경우 참, 아닌 겨우 거짓을 반환
+1 2 3 4 5 6 7  private bool IsInsideOnTriangle(Vector2 p, Vector2 t1, Vector2 t2, Vector2 t3) { float l1 = (p.x - t1.x) * (t3.y - t1.y) - (t3.x - t1.x) * (p.y - t1.y); float l2 = (p.x - t2.x) * (t1.y - t2.y) - (t1.x - t2.</description>
+    </item>
+    
+  </channel>
+</rss>
