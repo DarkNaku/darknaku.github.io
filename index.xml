@@ -8,6 +8,16 @@
     <language>ko</language>
     <lastBuildDate>Thu, 06 Jan 2022 14:14:30 +0900</lastBuildDate><atom:link href="http://darknaku.github.io/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title></title>
+      <link>http://darknaku.github.io/about/</link>
+      <pubDate>Tue, 12 Apr 2022 00:00:00 +0000</pubDate>
+      
+      <guid>http://darknaku.github.io/about/</guid>
+      <description>여기 주인은&amp;hellip;    윈도우 응용프로그램 개발자로 프로그래머 일을 시작했으며 지금은 게임 회사에서 클라이언트를 주로 담당하여 개발하고 있는 사람입니다. iOS와 Android Native 개발에 참여한 경험도 있지만 대부분의 게임 개발 경력은 Unity 엔진을 이용한 프로젝트에 참여해 왔습니다. 개인 프로젝트 진행하는 것도 좋아해서 틈틈이 작업하여 런칭하기도 합니다.
+이 블로그는 개인적으로 프로그래머로 일하며 기술적인 내용을 기록해 두거나 진행했던 프로젝트를 관리 하기 위한 블로그이며, 개인 저장소는 GitHub로 관리하고 있습니다.</description>
+    </item>
+    
+    <item>
       <title>3점을 지나는 원</title>
       <link>http://darknaku.github.io/posts/20220106_3/</link>
       <pubDate>Thu, 06 Jan 2022 14:14:30 +0900</pubDate>
