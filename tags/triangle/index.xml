@@ -14,7 +14,7 @@
       
       <guid>http://darknaku.github.io/posts/20220106_1/</guid>
       <description>좌표가 삼각형 안쪽에 있는 경우 참, 아닌 겨우 거짓을 반환
-1 2 3 4 5 6 7  private bool IsInsideOnTriangle(Vector2 p, Vector2 t1, Vector2 t2, Vector2 t3) { float l1 = (p.x - t1.x) * (t3.y - t1.y) - (t3.x - t1.x) * (p.y - t1.y); float l2 = (p.x - t2.x) * (t1.y - t2.y) - (t1.x - t2.x) * (p.y - t2.y); float l3 = (p.x - t3.</description>
+1 2 3 4 5 6 7  private bool IsInsideOnTriangle(Vector2 p, Vector2 t1, Vector2 t2, Vector2 t3) {  float l1 = (p.x - t1.x) * (t3.y - t1.y) - (t3.x - t1.x) * (p.y - t1.y);  float l2 = (p.x - t2.x) * (t1.y - t2.y) - (t1.x - t2.x) * (p.y - t2.y);  float l3 = (p.</description>
     </item>
     
   </channel>
