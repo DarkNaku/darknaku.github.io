@@ -14,17 +14,17 @@
 
     <meta name="author" content="나긔">
     <meta name="description" content="두 백터가 이루고 있는 각도를 0 ~ 360으로 얻는 코드.
-1 2 3 4 5 6 7  public float GetAngle (Vector3 a, Vector3 b) {  var dot = (a.x * b.x) &#43; (a.y * b.y);  var determinant = (a.x * b.y) - (a.y * b.x);  var degree = Mathf.Atan2(determinant, dot) * Mathf.Rad2Deg;   return ((degree &lt; 0f) ? 180f &#43; (180f &#43; degree) : degree) / 360f; }   ">
+1 2 3 4 5 6 7  public float GetAngle (Vector3 a, Vector3 b) {  var dot = (a.x * b.x) &#43; (a.y * b.y);  var determinant = (a.x * b.y) - (a.y * b.x);  var degree = Mathf.Atan2(determinant, dot) * Mathf.Rad2Deg;   return (degree &lt; 0f) ? 180f &#43; (180f &#43; degree) : degree; }   ">
     <meta name="keywords" content="unity,c#">
 
     <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="두 백터가 이루는 각을 360도로 구하기"/>
 <meta name="twitter:description" content="두 백터가 이루고 있는 각도를 0 ~ 360으로 얻는 코드.
-1 2 3 4 5 6 7  public float GetAngle (Vector3 a, Vector3 b) {  var dot = (a.x * b.x) &#43; (a.y * b.y);  var determinant = (a.x * b.y) - (a.y * b.x);  var degree = Mathf.Atan2(determinant, dot) * Mathf.Rad2Deg;   return ((degree &lt; 0f) ? 180f &#43; (180f &#43; degree) : degree) / 360f; }   "/>
+1 2 3 4 5 6 7  public float GetAngle (Vector3 a, Vector3 b) {  var dot = (a.x * b.x) &#43; (a.y * b.y);  var determinant = (a.x * b.y) - (a.y * b.x);  var degree = Mathf.Atan2(determinant, dot) * Mathf.Rad2Deg;   return (degree &lt; 0f) ? 180f &#43; (180f &#43; degree) : degree; }   "/>
 
     <meta property="og:title" content="두 백터가 이루는 각을 360도로 구하기" />
 <meta property="og:description" content="두 백터가 이루고 있는 각도를 0 ~ 360으로 얻는 코드.
-1 2 3 4 5 6 7  public float GetAngle (Vector3 a, Vector3 b) {  var dot = (a.x * b.x) &#43; (a.y * b.y);  var determinant = (a.x * b.y) - (a.y * b.x);  var degree = Mathf.Atan2(determinant, dot) * Mathf.Rad2Deg;   return ((degree &lt; 0f) ? 180f &#43; (180f &#43; degree) : degree) / 360f; }   " />
+1 2 3 4 5 6 7  public float GetAngle (Vector3 a, Vector3 b) {  var dot = (a.x * b.x) &#43; (a.y * b.y);  var determinant = (a.x * b.y) - (a.y * b.x);  var degree = Mathf.Atan2(determinant, dot) * Mathf.Rad2Deg;   return (degree &lt; 0f) ? 180f &#43; (180f &#43; degree) : degree; }   " />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="http://darknaku.github.io/posts/20220502_0/" /><meta property="article:section" content="posts" />
 <meta property="article:published_time" content="2022-05-02T02:52:00+09:00" />
@@ -196,7 +196,7 @@
 </span></span><span style="display:flex;"><span>    <span style="">var</span> determinant = (a.x * b.y) - (a.y * b.x);
 </span></span><span style="display:flex;"><span>    <span style="">var</span> degree = Mathf.Atan2(determinant, dot) * Mathf.Rad2Deg;
 </span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>    <span style="font-weight:bold">return</span> ((degree &lt; 0f) ? 180f + (180f + degree) : degree) / 360f;
+</span></span><span style="display:flex;"><span>    <span style="font-weight:bold">return</span> (degree &lt; 0f) ? 180f + (180f + degree) : degree;
 </span></span><span style="display:flex;"><span>}
 </span></span></code></pre></td></tr></table>
 </div>

@@ -14,7 +14,7 @@
       
       <guid>http://darknaku.github.io/posts/20220502_0/</guid>
       <description>두 백터가 이루고 있는 각도를 0 ~ 360으로 얻는 코드.
-1 2 3 4 5 6 7  public float GetAngle (Vector3 a, Vector3 b) {  var dot = (a.x * b.x) + (a.y * b.y);  var determinant = (a.x * b.y) - (a.y * b.x);  var degree = Mathf.Atan2(determinant, dot) * Mathf.Rad2Deg;   return ((degree &amp;lt; 0f) ? 180f + (180f + degree) : degree) / 360f; }   </description>
+1 2 3 4 5 6 7  public float GetAngle (Vector3 a, Vector3 b) {  var dot = (a.x * b.x) + (a.y * b.y);  var determinant = (a.x * b.y) - (a.y * b.x);  var degree = Mathf.Atan2(determinant, dot) * Mathf.Rad2Deg;   return (degree &amp;lt; 0f) ? 180f + (180f + degree) : degree; }   </description>
     </item>
     
     <item>
