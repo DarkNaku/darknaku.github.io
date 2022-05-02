@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>degree on 코딩하는 나긔</title>
+    <link>http://darknaku.github.io/tags/degree/</link>
+    <description>Recent content in degree on 코딩하는 나긔</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ko</language>
+    <lastBuildDate>Mon, 02 May 2022 02:52:00 +0900</lastBuildDate><atom:link href="http://darknaku.github.io/tags/degree/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>두 백터가 이루는 각을 360도로 구하기</title>
+      <link>http://darknaku.github.io/posts/20220502_0/</link>
+      <pubDate>Mon, 02 May 2022 02:52:00 +0900</pubDate>
+      
+      <guid>http://darknaku.github.io/posts/20220502_0/</guid>
+      <description>두 백터가 이루고 있는 각도를 0 ~ 360으로 얻는 코드.
+1 2 3 4 5 6 7  public float GetAngle (Vector3 a, Vector3 b) {  var dot = (a.x * b.x) + (a.y * b.y);  var determinant = (a.x * b.y) - (a.y * b.x);  var degree = Mathf.Atan2(determinant, dot) * Mathf.Rad2Deg;   return ((degree &amp;lt; 0f) ? 180f + (180f + degree) : degree) / 360f; }   </description>
+    </item>
+    
+  </channel>
+</rss>
