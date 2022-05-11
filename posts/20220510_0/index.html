@@ -258,8 +258,8 @@ BURST 디파인으로 묶여 있는 부분은 Burst 패키지를 사용하면 �
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span><span style="font-weight:bold">private</span> <span style="font-weight:bold">static</span> <span style="font-weight:bold">void</span> MortonDecode(<span style="">ulong</span> code, <span style="font-weight:bold">out</span> <span style="">uint</span> x, <span style="font-weight:bold">out</span> <span style="">uint</span> y, <span style="font-weight:bold">out</span> <span style="">uint</span> z) {
 </span></span><span style="display:flex;"><span>    x = (<span style="">uint</span>)X86.Bmi2.pext_u64(code, MASK);
-</span></span><span style="display:flex;"><span>    y = (<span style="">uint</span>)X86.Bmi2.pext_u64(code, MASK);
-</span></span><span style="display:flex;"><span>    z = (<span style="">uint</span>)X86.Bmi2.pext_u64(code, MASK);
+</span></span><span style="display:flex;"><span>    y = (<span style="">uint</span>)X86.Bmi2.pext_u64(code, MASK &lt;&lt; 1);
+</span></span><span style="display:flex;"><span>    z = (<span style="">uint</span>)X86.Bmi2.pext_u64(code, MASK &lt;&lt; 2);
 </span></span><span style="display:flex;"><span>}
 </span></span><span style="display:flex;"><span><span style="">#</span>endif
 </span></span><span style="display:flex;"><span>
